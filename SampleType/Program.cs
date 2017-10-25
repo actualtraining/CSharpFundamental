@@ -10,6 +10,11 @@ namespace SampleType
 {
     class Program
     {
+        enum Hari
+        {
+            senin,selasa,rabu,kamis,jumat,sabtu
+        }
+
         static void Main(string[] args)
         {
             /*Hitung objHitung = new Hitung();
@@ -39,6 +44,19 @@ namespace SampleType
             Console.WriteLine("Dosen 1 : " + dsn1.Nama);
             Console.WriteLine("Dosen 2 : " + dsn2.Nama);
             Console.WriteLine("Dosen 3 : " + dsn3.Nama);
+
+            Hari sekarang = Hari.rabu;
+
+            switch (sekarang)
+            {
+                case Hari.senin:
+                    Console.WriteLine("Hari senin");
+                    break;
+                case Hari.selasa:
+                    Console.WriteLine("Hari selasa");
+                    break;
+            }
+         
         }
     }
 }
