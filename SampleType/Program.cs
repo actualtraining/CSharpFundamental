@@ -90,7 +90,7 @@ namespace SampleType
                 Console.WriteLine(number);
             }*/
 
-            double alas, tinggi, jari;
+            /*double alas, tinggi, jari;
             alas = 12;
             tinggi = 12;
             Hitung objHitung = new Hitung();
@@ -105,11 +105,40 @@ namespace SampleType
             Console.WriteLine("hasil :" + hasil);
             Console.WriteLine("hasil luas lingkaran :" + jari);
 
-            string outparam = "";
-            double hasilpersegi = objHitung.HitungPersegi(12, 14, out outparam);
+            Mahasiswa outparam;
+            string outparam2 = "";
+            double hasilpersegi = objHitung.HitungPersegi(12, 14, out outparam,out outparam2);
 
             Console.WriteLine("Luas Persegi :" + hasilpersegi);
             Console.WriteLine(outparam);
+
+            string result = MyHelper.SambungKata("Erick", "Kurniawan");
+            Console.WriteLine(result);*/
+
+            /*Mahasiswa mhs1;
+            mhs1.Nim = "334455";
+            mhs1.Nama = "Erick";
+
+            Mahasiswa mhs2;
+            mhs2.Nim = "445566";
+            mhs2.Nama = "Budi";
+
+            List<Mahasiswa> listMahasiswa = new List<Mahasiswa>();
+            listMahasiswa.Add(mhs1);
+            listMahasiswa.Add(mhs2);
+
+            Console.WriteLine(listMahasiswa[0].Nim + " " + listMahasiswa[0].Nama);
+            foreach(var mhs in listMahasiswa)
+            {
+                Console.WriteLine("Nim : " + mhs.Nim + " Nama : " + mhs.Nama);
+            }*/
+
+            Queue<Dosen> queue = new Queue<Dosen>();
+            //Dosen d1 = new Dosen { Nik = "889988", Nama = "Erick" };
+            queue.Enqueue(new Dosen { Nik = "889988", Nama = "Erick" });
+
+
+            
         }
     }
 }

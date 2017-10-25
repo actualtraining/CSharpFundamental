@@ -27,11 +27,24 @@ namespace MyLibrary
             return 3.14 * jari * jari;
         }
 
-        public double HitungPersegi(double panjang,double lebar,out string outparam)
+        public double HitungPersegi(double panjang,double lebar,out Mahasiswa outparam, out string outparam2)
         {
-            outparam = "ditambahkan di method HitungPersegi";
+            outparam2 = "Jadi panjang " + panjang.ToString();
+            outparam.Nim = "334455";
+            outparam.Nama = "Erick";
+
             double hasil = panjang * lebar;
-            return hasil;    
+            return hasil;
+        }
+
+        public double HitungPersegi(double panjang,double lebar)
+        {
+            return panjang * lebar;
+        }
+
+        public double HitungPersegi(int panjang,double lebar)
+        {
+            return 0;
         }
     }
 }
